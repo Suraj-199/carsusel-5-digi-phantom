@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./swipwe.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+
+</head>
+
+<body>
+   
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/1.jpg" alt="img1"></div>
+            <div class="swiper-slide"><img src="./img/2.jpg" alt="img1"></div>
+            <div class="swiper-slide"><img src="./img/3.jpg" alt="img1"></div>
+            <div class="swiper-slide"><img src="./img/4.jpg" alt="img1"></div>
+            <div class="swiper-slide"><img src="./img/5.jpg" alt="img1"></div>
+            <div class="swiper-slide"><img src="./img/6.jpg" alt="img1"></div>
+            <div class="swiper-slide"><img src="./img/7.jpg" alt="img1"></div>
+            <div class="swiper-slide"><img src="./img/8.jpg" alt="img1"></div>
+            <div class="swiper-slide"><img src="./img/9.jpg" alt="img1"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <script src="./swiper.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            centeredSlides: true,
+            freeMode: true,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
